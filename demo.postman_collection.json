@@ -1,0 +1,603 @@
+{
+	"info": {
+		"_postman_id": "c4bcb48e-ec4a-488f-bb01-7266f8e6c6ba",
+		"name": "demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44817915",
+		"_collection_link": "https://eduardoguerrero-98588.postman.co/workspace/Eduardo-Guerrero's-Workspace~a0193921-8dee-4b32-8d10-27bd1771a473/collection/44817915-c4bcb48e-ec4a-488f-bb01-7266f8e6c6ba?action=share&source=collection_link&creator=44817915"
+	},
+	"item": [
+		{
+			"name": "Ver Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 May 2025 14:29:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"nombre\": \"Carlos Ramírez\",\n        \"genero\": \"Masculino\",\n        \"edad\": 35,\n        \"identificacion\": \"1102345678\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 1,\n        \"contrasena\": \"pass123\",\n        \"estado\": true\n    },\n    {\n        \"nombre\": \"Pepito Rodriguez\",\n        \"genero\": \"Otro\",\n        \"edad\": 50,\n        \"identificacion\": \"1711589720\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 2,\n        \"contrasena\": \"pass1234\",\n        \"estado\": true\n    },\n    {\n        \"nombre\": \"Ana Maria\",\n        \"genero\": \"Femenino\",\n        \"edad\": 24,\n        \"identificacion\": \"1108345678\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 3,\n        \"contrasena\": \"pass123\",\n        \"estado\": true\n    },\n    {\n        \"nombre\": \"Ana Maria\",\n        \"genero\": \"Femenino\",\n        \"edad\": 24,\n        \"identificacion\": \"1108345678\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 4,\n        \"contrasena\": \"pass123\",\n        \"estado\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Agregar Clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Fred Fred\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 18,\r\n  \"identificacion\": \"1102345678\",\r\n  \"direccion\": \"Av. Quito 123\",\r\n  \"telefono\": \"0998765432\",\r\n  \"contrasena\": \"pass123\",\r\n  \"estado\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Fred Fred\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 18,\r\n  \"identificacion\": \"1102345678\",\r\n  \"direccion\": \"Av. Quito 123\",\r\n  \"telefono\": \"0998765432\",\r\n  \"contrasena\": \"pass123\",\r\n  \"estado\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 May 2025 14:30:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"nombre\": \"Fred Fred\",\n    \"genero\": \"Masculino\",\n    \"edad\": 18,\n    \"identificacion\": \"1102345678\",\n    \"direccion\": \"Av. Quito 123\",\n    \"telefono\": \"0998765432\",\n    \"clienteId\": 5,\n    \"contrasena\": \"pass123\",\n    \"estado\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Ver Clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Fred Fred\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 18,\r\n  \"identificacion\": \"1102345678\",\r\n  \"direccion\": \"Av. Quito 123\",\r\n  \"telefono\": \"0998765432\",\r\n  \"contrasena\": \"pass123\",\r\n  \"estado\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Fred Fred\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 18,\r\n  \"identificacion\": \"1102345678\",\r\n  \"direccion\": \"Av. Quito 123\",\r\n  \"telefono\": \"0998765432\",\r\n  \"contrasena\": \"pass123\",\r\n  \"estado\": true\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 May 2025 14:30:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"nombre\": \"Carlos Ramírez\",\n        \"genero\": \"Masculino\",\n        \"edad\": 35,\n        \"identificacion\": \"1102345678\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 1,\n        \"contrasena\": \"pass123\",\n        \"estado\": true\n    },\n    {\n        \"nombre\": \"Pepito Rodriguez\",\n        \"genero\": \"Otro\",\n        \"edad\": 50,\n        \"identificacion\": \"1711589720\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 2,\n        \"contrasena\": \"pass1234\",\n        \"estado\": true\n    },\n    {\n        \"nombre\": \"Ana Maria\",\n        \"genero\": \"Femenino\",\n        \"edad\": 24,\n        \"identificacion\": \"1108345678\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 3,\n        \"contrasena\": \"pass123\",\n        \"estado\": true\n    },\n    {\n        \"nombre\": \"Ana Maria\",\n        \"genero\": \"Femenino\",\n        \"edad\": 24,\n        \"identificacion\": \"1108345678\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 4,\n        \"contrasena\": \"pass123\",\n        \"estado\": true\n    },\n    {\n        \"nombre\": \"Fred Fred\",\n        \"genero\": \"Masculino\",\n        \"edad\": 18,\n        \"identificacion\": \"1102345678\",\n        \"direccion\": \"Av. Quito 123\",\n        \"telefono\": \"0998765432\",\n        \"clienteId\": 5,\n        \"contrasena\": \"pass123\",\n        \"estado\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Ver Cuentas",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Fred Fred\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 18,\r\n  \"identificacion\": \"1102345678\",\r\n  \"direccion\": \"Av. Quito 123\",\r\n  \"telefono\": \"0998765432\",\r\n  \"contrasena\": \"pass123\",\r\n  \"estado\": true\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 May 2025 14:31:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"cuentaId\": 1,\n        \"numeroCuenta\": \"1234567890\",\n        \"tipoCuenta\": \"Ahorros\",\n        \"saldoInicial\": 350,\n        \"estado\": true,\n        \"cliente\": {\n            \"nombre\": \"Carlos Ramírez\",\n            \"genero\": \"Masculino\",\n            \"edad\": 35,\n            \"identificacion\": \"1102345678\",\n            \"direccion\": \"Av. Quito 123\",\n            \"telefono\": \"0998765432\",\n            \"clienteId\": 1,\n            \"contrasena\": \"pass123\",\n            \"estado\": true\n        }\n    },\n    {\n        \"cuentaId\": 2,\n        \"numeroCuenta\": \"1234567890\",\n        \"tipoCuenta\": \"Ahorros\",\n        \"saldoInicial\": 250,\n        \"estado\": true,\n        \"cliente\": {\n            \"nombre\": \"Pepito Rodriguez\",\n            \"genero\": \"Otro\",\n            \"edad\": 50,\n            \"identificacion\": \"1711589720\",\n            \"direccion\": \"Av. Quito 123\",\n            \"telefono\": \"0998765432\",\n            \"clienteId\": 2,\n            \"contrasena\": \"pass1234\",\n            \"estado\": true\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Agregar Cuentas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"numeroCuenta\": \"0987654321\",\r\n  \"tipoCuenta\": \"Credito\",\r\n  \"saldoInicial\": 5.00,\r\n  \"estado\": true,\r\n  \"cliente\": {\r\n    \"clienteId\": 5\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"0987654321\",\r\n  \"tipoCuenta\": \"Credito\",\r\n  \"saldoInicial\": 5.00,\r\n  \"estado\": true,\r\n  \"cliente\": {\r\n    \"clienteId\": 5\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 May 2025 14:32:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"cuentaId\": 3,\n    \"numeroCuenta\": \"0987654321\",\n    \"tipoCuenta\": \"Credito\",\n    \"saldoInicial\": 5,\n    \"estado\": true,\n    \"cliente\": {\n        \"nombre\": null,\n        \"genero\": null,\n        \"edad\": null,\n        \"identificacion\": null,\n        \"direccion\": null,\n        \"telefono\": null,\n        \"clienteId\": 5,\n        \"contrasena\": null,\n        \"estado\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Ver Movimientos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/movimientos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 May 2025 14:33:17 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"movimientoId\": 1,\n        \"fecha\": \"2025-05-09\",\n        \"tipoMovimiento\": \"Crédito\",\n        \"valor\": 150,\n        \"saldo\": 250,\n        \"cuenta\": {\n            \"cuentaId\": 2,\n            \"numeroCuenta\": \"1234567890\",\n            \"tipoCuenta\": \"Ahorros\",\n            \"saldoInicial\": 250,\n            \"estado\": true,\n            \"cliente\": {\n                \"nombre\": \"Pepito Rodriguez\",\n                \"genero\": \"Otro\",\n                \"edad\": 50,\n                \"identificacion\": \"1711589720\",\n                \"direccion\": \"Av. Quito 123\",\n                \"telefono\": \"0998765432\",\n                \"clienteId\": 2,\n                \"contrasena\": \"pass1234\",\n                \"estado\": true\n            }\n        }\n    },\n    {\n        \"movimientoId\": 2,\n        \"fecha\": \"2025-05-09\",\n        \"tipoMovimiento\": \"Crédito\",\n        \"valor\": -150,\n        \"saldo\": 350,\n        \"cuenta\": {\n            \"cuentaId\": 1,\n            \"numeroCuenta\": \"1234567890\",\n            \"tipoCuenta\": \"Ahorros\",\n            \"saldoInicial\": 350,\n            \"estado\": true,\n            \"cliente\": {\n                \"nombre\": \"Carlos Ramírez\",\n                \"genero\": \"Masculino\",\n                \"edad\": 35,\n                \"identificacion\": \"1102345678\",\n                \"direccion\": \"Av. Quito 123\",\n                \"telefono\": \"0998765432\",\n                \"clienteId\": 1,\n                \"contrasena\": \"pass123\",\n                \"estado\": true\n            }\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Crear Movimientos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fecha\": \"2025-05-09\",\r\n  \"tipoMovimiento\": \"Crédito\",\r\n  \"valor\": 300.0,\r\n  \"saldo\": 5.0,\r\n  \"cuenta\": {\r\n    \"cuentaId\": 3\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movimientos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Movimiento Valido",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha\": \"2025-05-09\",\r\n  \"tipoMovimiento\": \"Crédito\",\r\n  \"valor\": 300.0,\r\n  \"saldo\": 5.0,\r\n  \"cuenta\": {\r\n    \"cuentaId\": 3\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 May 2025 14:37:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"movimientoId\": 3,\n    \"fecha\": \"2025-05-09\",\n    \"tipoMovimiento\": \"Crédito\",\n    \"valor\": 300,\n    \"saldo\": 305,\n    \"cuenta\": {\n        \"cuentaId\": 3,\n        \"numeroCuenta\": null,\n        \"tipoCuenta\": null,\n        \"saldoInicial\": null,\n        \"estado\": null,\n        \"cliente\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fecha\": \"2025-05-09\",\r\n  \"tipoMovimiento\": \"Crédito\",\r\n  \"valor\": -500.0,\r\n  \"saldo\": 5.0,\r\n  \"cuenta\": {\r\n    \"cuentaId\": 3\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movimientos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fecha\": \"2025-05-09\",\r\n  \"tipoMovimiento\": \"Crédito\",\r\n  \"valor\": -500.0,\r\n  \"saldo\": 5.0,\r\n  \"cuenta\": {\r\n    \"cuentaId\": 3\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 09 May 2025 14:38:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "Saldo insuficiente"
+				}
+			]
+		}
+	]
+}
