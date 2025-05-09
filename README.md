@@ -1,1 +1,1 @@
-# Ejercicio_Tecnicoxszc
+# Ejercicio_Tecnico
